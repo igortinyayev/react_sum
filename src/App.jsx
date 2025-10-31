@@ -1,7 +1,8 @@
 import React from 'react';
 import { Sum } from './components/Sum/Sum';
 
-function App() {
+// ✅ Use named export (not default)
+export const App = () => {
   return (
     <main className="app">
       <Sum a={2} b={3} />
@@ -11,6 +12,4 @@ function App() {
       <Sum />
     </main>
   );
-}
-
-export default App;
+};
